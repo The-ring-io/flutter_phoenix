@@ -11,6 +11,18 @@ void main() {
   runApp(
     Phoenix(
       child: App(),
+      //Setup callback [Optional]
+      //Invoked everytime [rebirth] is called or the first time the app starts
+      //Can be used to initialize some services in your app, i.g: Your DI container
+      setup: () {
+        //Initialize DI Container
+      }
+      //TearDown callback [Optional]
+      //Invoked everytime [rebirth] is called before the state change
+      //Can be used to dispose of some service or close some a connection
+      tearDown: () {
+        //Close chat connection
+      }
     ),
   );
 }
