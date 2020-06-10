@@ -10,25 +10,26 @@ Wrap you App widget in the `Phoenix` widget.
 void main() {
   runApp(
     Phoenix(
+      //Your root widget, usually [MaterialApp], [CupertinoApp] or the widget containing one of them
       child: App(),
-      //Setup callback [Optional]
-      //Invoked everytime [rebirth] is called or the first time the app starts
-      //Can be used to initialize some services in your app, i.g: Your DI container
+      //[Optional] Setup callback
+      //Invoked every time [rebirth] is called or the first time the app starts
+      //Can be used to initialize some services in your app, i.g: Open up a connection to a chat service
       setup: () {
-        //Initialize DI Container
-      }
-      //TearDown callback [Optional]
-      //Invoked everytime [rebirth] is called before the state change
-      //Can be used to dispose of some service or close some a connection
+        //Do setup work
+      },
+      //[Optional] TearDown callback
+      //Invoked every time [rebirth] is called before the state change
+      //Can be used to dispose of some service or close some connection, i.g: Close up a connection to a chat service
       tearDown: () {
-        //Close chat connection
-      }
+        //Do tear down work
+      },
     ),
   );
 }
 ```
 
-Call the `rebirth` static method when you want to restart your application (rebuild the entire widget tree from scratch).
+Call the `rebirth` static method when you want to restart your application. This will rebuild the entire widget tree from scratch.
 
 
 ```dart
@@ -54,7 +55,7 @@ Here is a non-exhaustive list of use cases where `Phoenix` can help :
 Add the package as a dependency in your pubspec.yaml file.
 ```yaml
 dependencies:
-  flutter_phoenix: "^0.1.0"
+  flutter_phoenix: "^0.2.0"
 ```
 
 ### Import
