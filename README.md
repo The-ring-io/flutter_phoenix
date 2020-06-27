@@ -11,24 +11,24 @@ void main() {
   runApp(
     Phoenix(
       child: App(),
-      //Setup callback [Optional]
+      //[Optional] Setup callback
       //Invoked everytime [rebirth] is called or the first time the app starts
-      //Can be used to initialize some services in your app, i.g: Your DI container
+      //Can be used to initialize some services in your app, i.g: Open up a connection to a chat service
       setup: () {
-        //Initialize DI Container
+        //Do setup work
       },
-      //TearDown callback [Optional]
+      //[Optional] TearDown callback
       //Invoked everytime [rebirth] is called before the state change
-      //Can be used to dispose of some service or close some a connection
+      //Can be used to dispose of some service or close some connection, i.g: Close up a connection to a chat service
       tearDown: () {
-        //Close chat connection
+        //Do tear down work
       },
     ),
   );
 }
 ```
 
-Call the `rebirth` static method when you want to restart your application (rebuild the entire widget tree from scratch).
+Call the `rebirth` static method when you want to restart your application. This will rebuild the entire widget tree from scratch.
 
 
 ```dart
