@@ -1,20 +1,22 @@
 library flutter_phoenix;
 
+import 'dart:async';
+
 import 'package:flutter/widgets.dart';
 
 /// Wrap your root App widget in this widget and call [Phoenix.rebirth] to restart your app.
 class Phoenix extends StatefulWidget {
   final Widget child;
-  final VoidCallback setup;
-  final VoidCallback tearDown;
+  final FutureOr<void> Function() setup;
+  final FutureOr<void> Function() tearDown;
 
   Phoenix({@required this.child, this.setup, this.tearDown});
 
   @override
   _PhoenixState createState() => _PhoenixState();
 
-  static rebirth(BuildContext context) {
-    context.findAncestorStateOfType<_PhoenixState>().restartApp();
+  static Future rebirth(BuildContext context) {
+    return context.findAncestorStateOfType<_PhoenixState>().restartApp();
   }
 }
 
@@ -28,14 +30,14 @@ class _PhoenixState extends State<Phoenix> {
     widget?.setup();
   }
 
-  void restartApp() {
-    widget?.tearDown();
+  Future restartApp() async {
+    await widget?.tearDown();
 
     setState(() {
       _key = UniqueKey();
     });
 
-    widget?.setup();
+    await widget?.setup();
   }
 
   @override

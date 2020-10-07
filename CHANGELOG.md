@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2020-10-07
+- Make setup optionally async
+- Make tearDown optionally async
+- Make `Phoenix.rebirth()` async
+
 ## [0.2.0] - 2020-06-10
 - Added setup callback
 - Added tearDown callback
