@@ -2,6 +2,19 @@
 
 Easily restart your application from scratch, losing any previous state.
 
+## Installing
+1: Add this to your package's pubspec.yaml file:
+```yaml
+dependencies:
+  flutter_phoenix:
+    git: https://github.com/ludothinking/flutter_phoenix.git
+```
+
+2: Install it
+```bash
+$ flutter pub get
+```
+
 ## Usage
 
 Wrap you App widget in the `Phoenix` widget.

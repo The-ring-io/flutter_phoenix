@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.2.1+1] - 2020-10-07
+- Update README.md
+- Update example/main.dart
+
 ## [0.2.1] - 2020-10-07
 - Make setup optionally async
 - Make tearDown optionally async

@@ -1,6 +1,6 @@
 name: flutter_phoenix
 description: Easily restart your application from scratch, losing any previous state
-version: 0.2.1
+version: 0.2.1+1
 homepage: https://github.com/mobiten/flutter_phoenix
 repository: https://github.com/mobiten/flutter_phoenix
 issue_tracker: https://github.com/mobiten/flutter_phoenix/issues
