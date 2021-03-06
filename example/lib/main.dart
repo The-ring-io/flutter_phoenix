@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'Initial Screen',
               style: TextStyle(color: Colors.white, fontSize: 34, fontWeight: FontWeight.w700),
             ),
@@ -86,12 +86,12 @@ class MainScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(
+              const Text(
                 'Flutter Phoenix',
                 style: TextStyle(fontSize: 34, fontWeight: FontWeight.w700),
               ),
               const SizedBox(height: 24),
-              Text(
+              const Text(
                 'The Phoenix widget enables you to rebuild your widget tree from scratch, losing any state.'
                 '\n\nIt basically rebuild your whole application.'
                 '\n\nUsage is fairly simple :'
@@ -103,9 +103,11 @@ class MainScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 height: 48.0,
-                child: FlatButton(
-                  color: Colors.red,
-                  textColor: Colors.white,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.red,
+                    primary: Colors.white,
+                  ),
                   child: const Text('Phoenix.rebirth(context);'),
                   /// 2. Call Phoenix.rebirth(context) to rebuild your app
                   onPressed: () => Phoenix.rebirth(context),

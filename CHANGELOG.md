@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2021-03-08
+- Migrate to null safety
+- Update minimum dart SDK version to 2.12.0
+- Add a `key` param to the `Phoenix` widget [#6](https://github.com/mobiten/flutter_phoenix/issues/6)
+
 ## [0.1.0] - 2020-01-08
 - Credit [@rrousselGit](https://github.com/rrousselGit) post on [stackoverflow](https://stackoverflow.com/questions/50115311/flutter-how-to-force-an-application-restart-in-production-mode)
 

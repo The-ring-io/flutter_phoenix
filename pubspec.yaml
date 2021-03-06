@@ -1,12 +1,12 @@
 name: flutter_phoenix
 description: Easily restart your application from scratch, losing any previous state
-version: 0.1.0
+version: 1.0.0
 homepage: https://github.com/mobiten/flutter_phoenix
 repository: https://github.com/mobiten/flutter_phoenix
 issue_tracker: https://github.com/mobiten/flutter_phoenix/issues
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -15,5 +15,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.7.0
 
