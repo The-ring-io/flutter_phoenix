@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [0.0.1] - 2021-03-06
+## [0.2.0] - 2021-03-06
 - Migrate to Null Safety and Flutter 2
 
 ## [0.1.0] - 2020-01-08
