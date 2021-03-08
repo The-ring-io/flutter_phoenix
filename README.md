@@ -2,6 +2,12 @@
 
 Easily restart your application from scratch, losing any previous state.
 
+# Flutter 2.0 and null-safety
+
+From 1.0.0 and onwards, flutter_phoenix is null-safe and requires Dart SDK 2.12.0 minimum.
+
+If you want to keep using flutter_phoenix but cannot migrate to null-safety yet, use the version 0.1.0 instead.
+
 ## Usage
 
 Wrap you App widget in the `Phoenix` widget.
