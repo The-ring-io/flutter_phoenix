@@ -6,7 +6,7 @@ import 'package:flutter/widgets.dart';
 class Phoenix extends StatefulWidget {
   final Widget child;
 
-  Phoenix({this.child});
+  Phoenix({Key key, this.child}) : super(key: key);
 
   @override
   _PhoenixState createState() => _PhoenixState();
