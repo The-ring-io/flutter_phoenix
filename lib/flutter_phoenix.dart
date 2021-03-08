@@ -6,13 +6,13 @@ import 'package:flutter/widgets.dart';
 class Phoenix extends StatefulWidget {
   final Widget child;
 
-  Phoenix({Key key, this.child}) : super(key: key);
+  Phoenix({Key? key, required this.child}) : super(key: key);
 
   @override
   _PhoenixState createState() => _PhoenixState();
 
   static rebirth(BuildContext context) {
-    context.findAncestorStateOfType<_PhoenixState>().restartApp();
+    context.findAncestorStateOfType<_PhoenixState>()!.restartApp();
   }
 }
 

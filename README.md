@@ -42,7 +42,7 @@ Here is a non-exhaustive list of use cases where `Phoenix` can help :
 Add the package as a dependency in your pubspec.yaml file.
 ```yaml
 dependencies:
-  flutter_phoenix: "^0.1.0"
+  flutter_phoenix: "^1.0.0"
 ```
 
 ### Import
