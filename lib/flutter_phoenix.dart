@@ -27,7 +27,7 @@ class _PhoenixState extends State<Phoenix> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return KeyedSubtree(
       key: _key,
       child: widget.child,
     );
