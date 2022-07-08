@@ -1,9 +1,9 @@
 name: example
 description: An example app to show the use of Flutter Phoenix.
-version: 0.1.0
+version: 0.1.1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
