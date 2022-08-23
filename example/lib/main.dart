@@ -41,16 +41,19 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            const Text(
+          children: const <Widget>[
+            Text(
               'Initial Screen',
-              style: TextStyle(color: Colors.white, fontSize: 34, fontWeight: FontWeight.w700),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 34,
+                  fontWeight: FontWeight.w700),
             ),
           ],
         ),
@@ -61,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<Timer> simulateInitialDataLoading() async {
     return Timer(
       const Duration(seconds: 2),
-          () => Navigator.push(
+      () => Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => const MainScreen(),
@@ -97,7 +100,8 @@ class MainScreen extends StatelessWidget {
                 '\n\nUsage is fairly simple :'
                 '\n\n1. Wrap your root App widget in the Phoenix widget'
                 '\n\n2. Call Phoenix.rebirth(context); when you want to rebuild your application',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, height: 1.5),
+                style: TextStyle(
+                    fontSize: 16, fontWeight: FontWeight.w400, height: 1.5),
               ),
               const Spacer(),
               SizedBox(
@@ -109,6 +113,7 @@ class MainScreen extends StatelessWidget {
                     primary: Colors.white,
                   ),
                   child: const Text('Phoenix.rebirth(context);'),
+
                   /// 2. Call Phoenix.rebirth(context) to rebuild your app
                   onPressed: () => Phoenix.rebirth(context),
                 ),
