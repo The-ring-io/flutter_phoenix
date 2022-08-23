@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2022-08-23
+- Updated the example project to a more recent version of the flutter SDK
+- Updated the Dart SDK version to 2.17
+
 ## [1.0.0] - 2021-03-08
 - Migrate to null safety
 - Update minimum dart SDK version to 2.12.0
@@ -11,6 +15,3 @@ All notable changes to this project will be documented in this file.
 
 ## [0.0.1] - 2019-12-29
 - Initial release
-
-
-

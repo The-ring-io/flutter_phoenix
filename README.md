@@ -2,6 +2,12 @@
 
 Easily restart your application from scratch, losing any previous state.
 
+# Flutter 3.0 
+
+From 1.1.0 and onwards, flutter_phoenix is targeting SDK 2.17.0 minimum.
+
+If you want to keep using flutter_phoenix but cannot migrate to Dart SDK 2.17.0 yet, use the version 1.0.0 instead.
+
 # Flutter 2.0 and null-safety
 
 From 1.0.0 and onwards, flutter_phoenix is null-safe and requires Dart SDK 2.12.0 minimum.
