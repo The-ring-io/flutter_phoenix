@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2023-03-20
+- Incremented the minimum dart version required
+- Removed non-tested / non-compatible platforms from the platform badges
+
 ## [1.1.0] - 2022-08-23
 - Updated the example project to a more recent version of the flutter SDK
 - Updated the Dart SDK version to 2.17
